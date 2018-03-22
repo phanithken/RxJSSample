@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RxJS Boiler</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		html, body{
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">RxJS Sample</h1>
+		<hr>
+		<div class="row">
+			<div class="col-lg-6">
+				<div id="obs-event">
+					<h3><u>OBSERVABLE FROM EVENT</u></h3>
+					<button id="btn">Click</button>&nbsp;&nbsp;<p id="counter">Click count: <span>0</span><p>
+					<input type="text" name="input" id="input">
+					<p id="in-out">Output : <span></span></p>
+					<b id="mouse">Mouse Movement : <p id="x"></p><p id="y"></p></b>
+				</div>
+				<hr>
+				<div id="obs-array">
+					<h3><u>OBSERVABLE FROM ARRAY</u></h3>
+					<ul id="posts"></ul>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div id="obs-promise">
+					<h3><u>OBSERVABLE FROM PROMISE</u></h3>
+					<h5 id="name"></h5>
+					<ul>
+						<li id="blog"></li>
+						<li id="repos"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./dist/app.bundle.js"></script>
+</body>
+</html>
